@@ -23,3 +23,7 @@ database
 app.get("/", (req, res) => {
   res.send(`Está funcionando na porta ${PORT}`);
 });
+
+// jobs routes for acessing in api
+
+app.use("/jobs", require("./routes/jobs"));

@@ -2,6 +2,12 @@ const express = require("express");
 const router = express.Router();
 const Job = require("../models/Job");
 
+// testing route
+
+router.get("/test", (req, res) => {
+  res.send("Jobs route is working");
+});
+
 // add job
 router.post("/add", (req, res) => {
   let { title, description, salary, company, email } = req.body;
@@ -16,3 +22,5 @@ router.post("/add", (req, res) => {
     .then(() => res.redirect("/"))
     .catch((err) => console.log(err));
 });
+
+module.exports = router;
