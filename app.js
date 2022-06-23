@@ -8,6 +8,8 @@ const app = express();
 const path = require("path");
 const PORT = process.env.PORT || 3000;
 
+const Job = require('./models/Job');
+
 app.listen(PORT, () => {
   console.log(`Express executing ok in port ${PORT}`);
 });
@@ -36,7 +38,15 @@ database
 
 // routes
 app.get("/", (req, res) => {
-  res.render('index');
+  Job.findAll({order: [
+    ['createdAt', 'DESC']
+  ]})
+  .then(jobs => {
+    res.render('index', {
+      jobs
+    });
+  })
+
 });
 
 // jobs routes for acessing in api
