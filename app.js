@@ -36,7 +36,7 @@ database
 
 // routes
 app.get("/", (req, res) => {
-  res.send(`Está funcionando na porta ${PORT}`);
+  res.render('index');
 });
 
 // jobs routes for acessing in api
