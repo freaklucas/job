@@ -8,6 +8,10 @@ router.get("/test", (req, res) => {
   res.send("Jobs route is working");
 });
 
+router.get("/add", (req, res) => {
+  res.render("add");
+})
+
 // add job
 router.post("/add", (req, res) => {
   let { title, description, salary, company, email, new_job } = req.body;
