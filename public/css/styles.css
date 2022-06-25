@@ -52,6 +52,12 @@
     font-size: 3rem;
   }
   
+  #sub-title {
+    margin-bottom: 21px;
+    margin-top: 20px;
+    font-family: monospace;
+  }
+
   #main-subtitle {
     font-size: 1rem;
     padding-bottom: 80px;
