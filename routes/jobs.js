@@ -14,17 +14,25 @@ router.get("/add", (req, res) => {
 
 // add job
 router.post("/add", (req, res) => {
-  let { title, description, salary, company, email, new_job } = req.body;
-
-  Job.create({
+  let {
     title,
     description,
     salary,
     company,
     email,
-    new_job,
-  })
-    .then(() => res.redirect("/"))
+    new_job
+  } = req.body;
+
+  Job.create({
+      title,
+      description,
+      salary,
+      company,
+      email,
+      new_job,
+    })
+    .then(() => res.redirect("/")  
+    )
     .catch((err) => console.log(err));
 });
 
