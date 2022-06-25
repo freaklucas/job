@@ -67,6 +67,7 @@ app.get("/", (req, res) => {
         search
       });
     })
+    
     .catch(err => console.log(err));
   }
 });
