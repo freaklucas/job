@@ -1,30 +1,32 @@
-<div id="job-container" class="container">
+
+
+<div id="job-container" class="container mt-4">
     <div class="row">
         <div class="text-center">
             <a class="back-link main-color" href="/">Voltar</a>
             <div id="img-container" class="col-md-12">
-                <img src="/img/company.svg" alt="Company img">
+                <img src="/img/company.svg" alt="Company img" class="mt-4" />
             </div>
             <div class="col-md-12">
-                <h1 class="main-color">
+                <h1 class="main-color font-mono mb-2">
                     {{ job.dataValues.title }}
                 </h1>
-                <p class="bold">
+                <h4 class="bold mt-4">
                     Quem eles estão buscando:
-                </p>
-                <p class="job-desc">
+                </h4>
+                <h5 class="job-desc mt-4">
                     {{ job.dataValues.description }}
-                </p>
-                <p class="bold">
+                </h5>
+                <h4 class="bold mt-4">
                     <span>Salário:</span>
                     R$ {{ job.dataValues.salary }}
-                </p>
-                <P>Para trabalhar na <span class="bold main-color">{{ job.dataValues.company }}</span> envie um email
+                </h4>
+                <h4 class="mt-5">Para trabalhar na <span class="mono main-color mt-4">{{job.dataValues.company}}</span> envie um email
                     para a
-                    <a href="mail:to  {{ job.dataVales.email }}">
-                        {{ job.dataVales.email }}
+                    <a href="mail:to  {{job.dataValues.email}}">
+                        {{job.dataValues.email}}
                     </a>
-                </P>
+                </h4>
             </div>
         </div>
     </div>
