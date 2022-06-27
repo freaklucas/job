@@ -22,6 +22,9 @@ const Job = db.define("job", {
   },
   seniority : {
     type: Sequelize.STRING,
+  },
+  localization : {
+    type: Sequelize.STRING,
   }
 });
 
