@@ -1,5 +1,3 @@
-
-
 <div id="job-container" class="container mt-4">
     <div class="row">
         <div class="text-center">
@@ -18,10 +16,15 @@
                     {{ job.dataValues.description }}
                 </h5>
                 <h3 class="bold mt-4 main-color">
+                    <span>Senioridade:</span>
+                     {{ job.dataValues.seniority }}
+                </h3>
+                <h3 class="bold mt-4 main-color">
                     <span>Salário:</span>
                     R$ {{ job.dataValues.salary }}
                 </h3>
-                <h4 class="mt-5">Para trabalhar na <span class="mono main-color mt-4">{{job.dataValues.company}}</span> envie um email
+                <h4 class="mt-5">Para trabalhar na <span class="mono main-color mt-4">{{job.dataValues.company}}</span>
+                    envie um email
                     para a
                     <a href="mail:to  {{job.dataValues.email}}">
                         {{job.dataValues.email}}

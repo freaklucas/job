@@ -8,24 +8,39 @@
       <form action="/jobs/add" method="POST">
         <div class="form-group">
           <label for="title">Título da vaga:</label>
-          <input type="text" class="form-control" id="title" name="title" placeholder="Digite o título da vaga" required>
+          <input type="text" class="form-control" id="title" name="title" placeholder="Digite o título da vaga"
+            required>
           <small id="titleHelp" class="form-text text-muted">O título é muito importante, seja claro e objetivo.</small>
         </div>
         <div class="form-group">
           <label for="description">Descrição da vaga:</label>
-          <textarea type="text" class="form-control" id="description" name="description" placeholder="Descreva as atividades do desenvolvedor..." required></textarea>
+          <textarea type="text" class="form-control" id="description" name="description"
+            placeholder="Descreva as atividades do desenvolvedor..." required></textarea>
         </div>
         <div class="form-group">
           <label for="company">Empresa contratante:</label>
-          <input type="text" class="form-control" id="company" name="company" placeholder="Digite a empresa que vai contratar" required>
+          <input type="text" class="form-control" id="company" name="company"
+            placeholder="Digite a empresa que vai contratar" required>
+          <small id="titleHelp" class="form-text text-muted">Nome da empresa contratante.</small>
         </div>
         <div class="form-group">
           <label for="email">E-mail para contato:</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="Digite o e-mail para contato" required>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Digite o e-mail para contato"
+            required>
+          <small id="titleHelp" class="form-text text-muted">Email da empresa contratante.</small>
+        </div>
+        <div class="form-group">
+          <label for="seniority">Senioridade da vaga:</label>
+          <input type="text" class="form-control" id="seniority" name="seniority"
+            placeholder="Digite a senioridade" required>
+          <small id="titleHelp" class="form-text text-muted">Júnior, Pleno ou Sênior.</small>
         </div>
         <div class="form-group">
           <label for="salary">Salário oferecido:</label>
-          <input type="text" class="form-control" id="salary" name="salary" placeholder="Digite o Salário, sem ponto ou vírgula ex: 6500" required>
+          <input type="text" class="form-control" id="salary" name="salary"
+            placeholder="Digite o Salário, sem ponto ou vírgula ex: 6500" required>
+          <small id="titleHelp" class="form-text text-muted">Insira o salário sem vírgula e ponto, ex: 6500 =
+            6.500.</small>
         </div>
         <input type="hidden" name="new_job" value="1">
         <button type="submit" class="btn btn-primary">Enviar</button>

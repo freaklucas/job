@@ -20,6 +20,9 @@ const Job = db.define("job", {
   new_job: {
     type: Sequelize.INTEGER,
   },
+  seniority : {
+    type: Sequelize.STRING,
+  }
 });
 
 module.exports = Job;
