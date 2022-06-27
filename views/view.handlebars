@@ -6,14 +6,23 @@
                 <img src="/img/company.svg" alt="Company img" class="mt-4" />
             </div>
             <div class="col-md-12">
+                <h4 class="bold mt-4">
+                    Quem eles estão buscando:
+                </h4>
                 <h1 class="main-color font-mono mb-2">
                     {{ job.dataValues.title }}
                 </h1>
                 <h4 class="bold mt-4">
-                    Quem eles estão buscando:
+                    Desempenho:
                 </h4>
                 <h5 class="job-desc mt-4">
-                    {{ job.dataValues.description }}
+                    "{{ job.dataValues.description }}"
+                </h5>
+                <h4 class="bold mt-4">
+                    Regime de trabalho:
+                </h4>
+                <h5 class="job-desc mt-4">
+                    {{ job.dataValues.work_regime }}
                 </h5>
                 <h3 class="bold mt-4 main-color">
                     <span>Senioridade:</span>

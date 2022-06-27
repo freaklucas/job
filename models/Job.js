@@ -25,6 +25,9 @@ const Job = db.define("job", {
   },
   localization : {
     type: Sequelize.STRING,
+  },
+  work_regime : {
+    type: Sequelize.STRING,
   }
 });
 
